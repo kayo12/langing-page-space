@@ -1,6 +1,6 @@
 export default function Nav(props) {
   return (
-    <div className="nav-menu">
+    <header className="nav-menu">
       <div className="logo">Logo</div>
       <nav className="nav-bar"> 
         <ul className="nav-list">
@@ -10,6 +10,6 @@ export default function Nav(props) {
           <li><a href="#">Sobre</a></li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
