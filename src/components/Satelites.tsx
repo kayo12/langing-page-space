@@ -1,7 +1,7 @@
 export default function Satelites(props) {
   return (
     <section className="satelites-section">
-      <div className="satellite">
+      <div className="satellite stl-container">
         <div className="satellite-description">
           <h4>Vc sabia ?</h4>
           <p> Aliquam condimentum ligula ut dolor rhoncus, eget ullamcorper sem
