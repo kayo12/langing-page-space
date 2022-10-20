@@ -1,13 +1,14 @@
 export default function Astros() {
   return (
     <section className="astros-section">
+
       <div className="astros">
         <div className="astros-img">
-          <img src="" alt="cometa" />
+          <img src="/assests/img/cometa.png" alt="cometa" width="100%"/>
         </div>
         <div className="astros-description">
           <div className="astros-head">
-            <h4>Titulo</h4>
+            <h4>Cometa</h4>
             <p>subtitulo</p>
           </div>
           <div className="astros-body">
@@ -19,6 +20,7 @@ export default function Astros() {
               Etiam ultrices augue ut nisl efficitur, sed molestie ligula
               sodales. Duis vestibulum sollicitudin fermentum. Donec ac lectus
               nec nisi cursus vestibulum quis ac mauris.
+              dsaddsdsd
             </p>
           </div>
         </div>

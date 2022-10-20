@@ -2,8 +2,9 @@ import Nav from "./Nav";
 
 export default function Main(props) {
   return (
-    <section >
-           <Nav/>
+    
+    <section className="section-main">
+            <Nav/>
             <main className="main-section">
 
             </main>

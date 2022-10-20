@@ -2,6 +2,7 @@ export default function Satelites(props) {
   return (
     <section className="satelites-section">
       <div className="satellite stl-container">
+        
         <div className="satellite-description">
           <h4>Vc sabia ?</h4>
           <p> Aliquam condimentum ligula ut dolor rhoncus, eget ullamcorper sem
@@ -17,7 +18,7 @@ export default function Satelites(props) {
           Etiam tempus molestie rutrum.</p> 
         </div>
         <div className="satellite-img">
-            <img src="/assests/img/satellite.jpg" alt="satelite" />
+            <img src="/assests/img/satellite.png" alt="satelite" />
         </div>
       </div>
     </section>
