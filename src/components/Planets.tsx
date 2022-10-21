@@ -9,7 +9,7 @@ export default function Planetas(props) {
           <div className="planet-cards">
             <img src="/assests/img/mars.png" alt="Earth" className="planet-img" />
             <div className="planet-content">
-              <span className="planet-name">Terra</span>
+              <span className="planet-name">Marte</span>
               <p className="planet-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
@@ -43,7 +43,7 @@ export default function Planetas(props) {
           <div className="planet-cards">
             <img src="/assests/img/plutao.png" alt="Earth" className="planet-img" />
             <div className="planet-content">
-              <span className="planet-name">Terra</span>
+              <span className="planet-name">Plutão</span>
               <p className="planet-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
