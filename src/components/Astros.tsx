@@ -1,14 +1,14 @@
 export default function Astros() {
   return (
     <section className="astros-section">
-
+      <h3 >ASTROS</h3>
       <div className="astros">
         <div className="astros-img">
           <img src="/assests/img/cometa.png" alt="cometa" width="100%"/>
         </div>
         <div className="astros-description">
           <div className="astros-head">
-            <h4>Cometa</h4>
+            <h1>Cometa</h1>
             <p>subtitulo</p>
           </div>
           <div className="astros-body">

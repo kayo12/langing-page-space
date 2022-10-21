@@ -2,7 +2,7 @@ export default function Footer(props) {
   return (
     <footer className="footer-section">
       <div className="rodape">
-        <div>
+        <div >
           <div className="">mais informações</div>
           <div className="">
             <ul>
