@@ -15,11 +15,7 @@ export default function Planetas(props) {
                 nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
                 viverra eget. Aliquam arcu ex, varius vitae venenatis in,
                 eleifend eu urna. Vivamus sem sem, aliquam pharetra justo eget,
-                lobortis tempor lectus. Ut massa arcu, rutrum eget pharetra ac,
-                vulputate vitae orci. Quisque et erat est. Suspendisse nec quam
-                purus. Nullam cursus lorem ut condimentum maximus. Cras massa
-                nibh, dapibus vitae convallis quis, dignissim ut libero. Cras
-                blandit ornare ullamcorper.
+                lobortis tempor lectus. 
               </p>
             </div>
           </div>
@@ -32,11 +28,7 @@ export default function Planetas(props) {
                 nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
                 viverra eget. Aliquam arcu ex, varius vitae venenatis in,
                 eleifend eu urna. Vivamus sem sem, aliquam pharetra justo eget,
-                lobortis tempor lectus. Ut massa arcu, rutrum eget pharetra ac,
-                vulputate vitae orci. Quisque et erat est. Suspendisse nec quam
-                purus. Nullam cursus lorem ut condimentum maximus. Cras massa
-                nibh, dapibus vitae convallis quis, dignissim ut libero. Cras
-                blandit ornare ullamcorper.
+                lobortis tempor lectus. 
               </p>
             </div>
           </div>
@@ -49,11 +41,72 @@ export default function Planetas(props) {
                 nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
                 viverra eget. Aliquam arcu ex, varius vitae venenatis in,
                 eleifend eu urna. Vivamus sem sem, aliquam pharetra justo eget,
-                lobortis tempor lectus. Ut massa arcu, rutrum eget pharetra ac,
-                vulputate vitae orci. Quisque et erat est. Suspendisse nec quam
-                purus. Nullam cursus lorem ut condimentum maximus. Cras massa
-                nibh, dapibus vitae convallis quis, dignissim ut libero. Cras
-                blandit ornare ullamcorper.
+                lobortis tempor lectus. 
+              </p>
+            </div>
+          </div>
+          <div className="planet-cards">
+            <img src="/assests/img/mercurio.webp" alt="Earth" className="planet-img" />
+            <div className="planet-content">
+              <span className="planet-name">Mercurio</span>
+              <p className="planet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
+                viverra eget. Aliquam arcu ex, varius vitae venenatis in,
+                eleifend eu urna. Vivamus sem sem, aliquam pharetra justo eget,
+                lobortis tempor lectus. 
+              </p>
+            </div>
+          </div>
+          <div className="planet-cards">
+            <img src="/assests/img/venus.png" alt="Earth" className="planet-img" />
+            <div className="planet-content">
+              <span className="planet-name">Venus</span>
+              <p className="planet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
+                viverra eget. Aliquam arcu ex, varius vitae venenatis in,
+                eleifend eu urna. Vivamus sem sem, aliquam pharetra justo eget,
+                lobortis tempor lectus. 
+              </p>
+            </div>
+          </div>
+          <div className="planet-cards">
+            <img src="/assests/img/jupiter.webp" alt="Earth" className="planet-img" />
+            <div className="planet-content">
+              <span className="planet-name">Jupiter</span>
+              <p className="planet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
+                viverra eget. Aliquam arcu ex, varius vitae venenatis in,
+                eleifend eu urna. Vivamus sem sem, aliquam pharetra justo eget,
+                lobortis tempor lectus. 
+              </p>
+            </div>
+          </div>
+          <div className="planet-cards">
+            <img src="/assests/img/saturno.png" alt="Earth" className="planet-img" />
+            <div className="planet-content">
+              <span className="planet-name">Saturno</span>
+              <p className="planet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
+                viverra eget. Aliquam arcu ex, varius vitae venenatis in,
+                eleifend eu urna. Vivamus sem sem, aliquam pharetra justo eget,
+                lobortis tempor lectus. 
+              </p>
+            </div>
+          </div>
+          <div className="planet-cards">
+            <img src="/assests/img/urano.webp" alt="Earth" className="planet-img" />
+            <div className="planet-content">
+              <span className="planet-name">Urano</span>
+              <p className="planet-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                nec ex velit. Aliquam placerat bibendum dui, sed vulputate quam
+                viverra eget. Aliquam arcu ex, varius vitae venenatis in,
+                eleifend eu urna. Vivamus sem sem, aliquam pharetra justo eget,
+                lobortis tempor lectus. 
               </p>
             </div>
           </div>
