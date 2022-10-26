@@ -1,7 +1,7 @@
 export default function Astros() {
   return (
     <section className="astros-section">
-      <h3 >ASTROS</h3>
+      <span className="title-section">Astros</span>
       <div className="astros">
         <div className="astros-img">
           <img src="/assests/img/cometa.png" alt="cometa" width="100%"/>

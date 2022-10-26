@@ -1,7 +1,8 @@
 export default function Nav(props) {
   return (
     <header className="nav-menu">
-      <div className="logo">Logo</div>
+      <div className="logo fa-light fa-planet-moon">
+      <i className="fa-light fa-planet-moon"></i>Logo</div>
       <nav className="nav-bar"> 
         <ul className="nav-list">
           <li><a href="#">Planetas</a></li>

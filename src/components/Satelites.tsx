@@ -1,6 +1,9 @@
 export default function Satelites(props) {
   return (
     <section className="satelites-section">
+      <span className="title-section">
+        Satelites
+      </span>
       <div className="satellite stl-container">
         
         <div className="satellite-description">

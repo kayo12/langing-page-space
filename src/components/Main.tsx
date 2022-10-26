@@ -6,7 +6,7 @@ export default function Main(props) {
     <section className="section-main">
             <Nav/>
             <main className="main-section">
-
+    
             </main>
     </section>
     

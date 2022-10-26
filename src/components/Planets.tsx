@@ -4,6 +4,9 @@ import earth from "../assests/img/mars.jpg";
 export default function Planetas(props) {
   return (
     <section className="planets-section">
+      <span className="title-section">
+        Planetas
+      </span>
       <div className="planet">
         <div className="planet-list">
           <div className="planet-cards">

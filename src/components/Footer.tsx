@@ -7,7 +7,11 @@ export default function Footer(props) {
     <footer className="footer-section">
       <div className="rodape">
         <div className="rodape-list">
-          <div className="rodape-info">mais informações</div>
+          <div className="rodape-info">
+            <ul>
+              <li>Contato</li>
+            </ul>
+          </div>
           <div className="rodape-media">
             <ul>
                 <li>linkedin</li>
