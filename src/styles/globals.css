@@ -21,6 +21,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 
@@ -197,17 +198,18 @@ a {
 }
 
 .stl-container{
-  flex-wrap: wrap;
-  height: 300px;
+  width: 100%;
+  height: auto;
   border: 1px solid white;
-  flex-direction: column;  
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .satellite-description{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  flex: 3 100px;  
   height: 100%;
 }
 
@@ -217,6 +219,10 @@ a {
   font-size: 1.3rem;
 }
 
+/* .satellite-description{
+  flex: 1;
+} */
+
 .satellite-description > p
 {
   text-align: justify;
@@ -225,11 +231,12 @@ a {
 }
 
 .satellite-img{
-width: 30%;
+  flex: 1 100px;
 height: 100%;
 perspective: 100px;
 padding-left: 1rem;
 }
+
 
 .satellite-img img{
   max-width: 100%;
@@ -334,4 +341,8 @@ padding-left: 1rem;
 .rodape-media  ul li{
   list-style-type: none;
   padding-left: 1rem;
+}
+
+.rodape-info  ul li{
+  list-style-type: none;
 }
