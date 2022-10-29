@@ -1,8 +1,8 @@
+import { IoLogoLinkedin,IoLogoInstagram } from 'react-icons/io';
+
 export default function Footer(props) {
 
   let date = new Date().getFullYear()  
-
-
   return (
     <footer className="footer-section">
       <div className="rodape">
@@ -14,8 +14,8 @@ export default function Footer(props) {
           </div>
           <div className="rodape-media">
             <ul>
-                <li>linkedin</li>
-                <li>instagram</li>
+                <li ><IoLogoLinkedin className="icon-media"/></li>
+                <li ><IoLogoInstagram className="icon-media"/></li>
             </ul>
           </div>
         </div>

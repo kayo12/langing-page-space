@@ -1,8 +1,14 @@
+
+import { GiExplodingPlanet } from 'react-icons/gi';
+
+
+
 export default function Nav(props) {
   return (
     <header className="nav-menu">
-      <div className="logo fa-light fa-planet-moon">
-      <i className="fa-light fa-planet-moon"></i>Logo</div>
+      <div className="logo">
+        <GiExplodingPlanet id="logo_nav"/>
+      </div>
       <nav className="nav-bar"> 
         <ul className="nav-list">
           <li><a href="#">Planetas</a></li>

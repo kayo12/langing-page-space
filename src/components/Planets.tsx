@@ -8,6 +8,8 @@ export default function Planetas(props) {
         Planetas
       </span>
       <div className="planet">
+      <button className="btn-before">Anterior</button>
+          <button className="btn-after">proximo</button>
         <div className="planet-list">
           <div className="planet-cards">
             <img src="/assests/img/mars.png" alt="Earth" className="planet-img" />
