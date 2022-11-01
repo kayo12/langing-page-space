@@ -2,14 +2,32 @@ import Image from "next/image";
 import earth from "../assests/img/mars.jpg";
 
 export default function Planetas(props) {
+
+  function scrollMove(event){
+
+    let eve = event.target.id
+    console.log(eve)
+    let planetlist = document.querySelectorAll(".planet-list")[0]
+
+    if(eve == "next"){
+      
+      planetlist.scrollTo(planetlist.scrollLeft + 300, 0)
+    }
+   
+    if(eve == "after"){
+      planetlist.scrollTo(planetlist.scrollLeft - 300, 0)
+    }
+  }
+
+
   return (
     <section className="planets-section">
       <span className="title-section">
         Planetas
       </span>
       <div className="planet">
-      <button className="btn-before">Anterior</button>
-          <button className="btn-after">proximo</button>
+      <button id="after" onClick={(e) => scrollMove(e)} className="btn-before">Anterior</button>
+      <button id="next" onClick={(e) => scrollMove(e)} className="btn-after">proximo</button>
         <div className="planet-list">
           <div className="planet-cards">
             <img src="/assests/img/mars.png" alt="Earth" className="planet-img" />

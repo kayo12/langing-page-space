@@ -180,9 +180,9 @@ a:after{
   height: 100%;
   flex-direction: row;
   justify-content: center;
-  overflow-x: auto;  
+  overflow-x: hidden;  
   gap:40px;
-  
+  scroll-behavior: smooth;
 }
 
 
