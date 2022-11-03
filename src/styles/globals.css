@@ -176,14 +176,34 @@ a:after{
 
 .planet-list{
   display: flex;
-  width: 100%;
+  max-width: 990px;
   height: 100%;
   flex-direction: row;
   justify-content: center;
-  overflow-x: hidden;  
+  overflow-x: auto;  
   gap:40px;
   scroll-behavior: smooth;
 }
+
+.planet-list::-webkit-scrollbar {
+  width: 20px;
+}
+
+.planet-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+.planet-list::-webkit-scrollbar-thumb {
+  background: rgb(32, 32, 32); 
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.226);
+}
+
+.planet-list::-webkit-scrollbar-thumb:hover {
+  background: #8e8d8d; 
+}
+
 
 
 
@@ -205,7 +225,11 @@ a:after{
   background-color:rgb(255, 255, 255);
   z-index: 1;
   font-size: 1rem;
-  opacity: 0.4;
+  opacity: 0.5;
+  border-radius: 18px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .btn-before{
@@ -213,11 +237,15 @@ a:after{
   left: 30px;
   top:50%;
   z-index: 1;
+  background: linear-gradient( to left, rgba(0, 0, 0, 0.217), rgb(0 0 0 / 85%), rgba(190, 190, 190, 0.217) );
+
 }
 .btn-after{
   position:absolute;
   right: 30px;
   top:50%;
+  background: linear-gradient( to left, rgba(190, 190, 190, 0.217), rgb(0 0 0 / 85%), rgba(0, 0, 0, 0.68) );
+
 }
 
 .planet-img {
