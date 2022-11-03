@@ -190,14 +190,14 @@ a:after{
 }
 
 .planet-list::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px rgb(0, 0, 0); 
   border-radius: 10px;
 }
 
 .planet-list::-webkit-scrollbar-thumb {
   background: rgb(32, 32, 32); 
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.226);
+  border: 2px solid rgba(255, 255, 255, 0);
 }
 
 .planet-list::-webkit-scrollbar-thumb:hover {
