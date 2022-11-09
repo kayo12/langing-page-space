@@ -171,6 +171,7 @@ a:after{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem;
 }
 
 .main-astronaut{
@@ -180,7 +181,7 @@ a:after{
 }
 
 .main-astronaut > img{
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -194,8 +195,21 @@ a:after{
 
 #textDinamic{
   color:white;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation: pisque 0.8s infinite;
 }
+
+@keyframes pisque{
+  from {
+    border-right-color: white;
+  }
+  to{
+    border-right-color: transparent;
+  }
+}
+
 
 .planets-section {
   display: flex;
