@@ -1,3 +1,5 @@
+import {BsChevronCompactRight,BsChevronCompactLeft} from "react-icons/bs"
+
 import Image from "next/image";
 import earth from "../assests/img/mars.jpg";
 
@@ -26,8 +28,8 @@ export default function Planetas(props) {
         Planetas
       </span>
       <div className="planet">
-      <button id="after" onClick={(e) => scrollMove(e)} className="btn-before">Anterior</button>
-      <button id="next" onClick={(e) => scrollMove(e)} className="btn-after">proximo</button>
+      <button id="after" onClick={(e) => scrollMove(e)} className="btn-before"><BsChevronCompactLeft className="btn-before-icon"/></button>
+      <button id="next" onClick={(e) => scrollMove(e)} className="btn-after"><BsChevronCompactRight className="btn-after-icon"/></button>
         <div className="planet-list">
           <div className="planet-cards">
             <img src="/assests/img/mars.png" alt="Earth" className="planet-img" />
