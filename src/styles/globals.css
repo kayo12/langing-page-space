@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500&family=Karla:wght@400;800&family=Roboto+Mono:wght@300&family=Zilla+Slab:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;500&family=Karla:wght@400;800&family=Roboto+Mono:wght@300&family=Zilla+Slab:wght@500&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Gemunu Libre', sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
 }
 
 a {
@@ -16,7 +16,9 @@ a {
   box-sizing: border-box;
 }
 
-.satelites-section, .astros-section, .planets-section{
+.satelites-section,
+.astros-section,
+.planets-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,13 +26,14 @@ a {
   padding: 1rem;
 }
 
-
-.container{
+.container {
   width: 100;
   height: 100vh;
 }
 
-.astros, .main, .satellite {
+.astros,
+.main,
+.satellite {
   height: 100%;
   width: 100%;
   max-width: 990px;
@@ -39,7 +42,7 @@ a {
   align-items: center;
 }
 
-.planet{
+.planet {
   height: 100%;
   width: 100%;
   display: flex;
@@ -47,35 +50,34 @@ a {
   align-items: center;
 }
 
-.title-section{
-  color:blanchedalmond;
+.title-section {
+  color: blanchedalmond;
   font-size: 3rem;
   font-weight: bolder;
   margin: 2rem 0;
 }
 
-.nav-menu{
+.nav-menu {
   background: linear-gradient(
-      to bottom,
-      rgba(1, 1, 1, 0.934),
-      rgb(0, 0, 0),
-      rgb(0, 0, 0)
-    );
-  
+    to bottom,
+    rgba(1, 1, 1, 0.934),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0)
+  );
+
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
-#logo_nav{
-
+#logo_nav {
   font-size: 5rem;
 }
 
-.nav-bar{
+.nav-bar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -83,62 +85,55 @@ a {
   height: 100%;
   padding: 0.5rem;
 }
-.nav-list{
+.nav-list {
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem;
   flex-wrap: wrap;
 }
 
-
-.nav-list{
+.nav-list {
   position: relative;
 }
-.nav-list > li{
+.nav-list > li {
   margin-left: 1rem;
   padding: 0.5rem;
   list-style-type: none;
   color: white;
   text-align: center;
-
 }
 
-
-
-
-.nav-list > li > a{
+.nav-list > li > a {
   font-size: 1.1rem;
   text-align: center;
   margin: 1rem;
   position: relative;
   padding-bottom: 0.5rem;
-
-  
 }
 
-.logo{
+.logo {
   font-size: 1.1rem;
   text-align: center;
   margin: 1rem;
   color: white;
 }
 
-a:after{
+a:after {
   text-align: center;
   position: absolute;
-  bottom:0;
-  left:0;
+  bottom: 0;
+  left: 0;
   content: " ";
   width: 0;
   height: 2px;
   transition: 0.3s;
 }
 
- a:hover:after{
+a:hover:after {
   text-align: center;
   position: absolute;
-  bottom:0;
-  right:0;
+  bottom: 0;
+  right: 0;
   content: " ";
   width: 100%;
   height: 1px;
@@ -146,9 +141,7 @@ a:after{
   border-bottom: 1px solid white;
 }
 
-
 .main-section {
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,13 +152,13 @@ a:after{
       rgb(0, 0, 0)
     ),
     url("/assests/img/earth-main2.jpg") no-repeat top center;
-    background-size: 100%;
+  background-size: 100%;
   background-size: cover;
   height: 100vh;
- 
+
   width: 100%;
 }
-.main-body{
+.main-body {
   height: 100%;
   max-width: 990px;
   display: flex;
@@ -174,43 +167,43 @@ a:after{
   padding: 1rem;
 }
 
-.main-astronaut{
+.main-astronaut {
   height: auto;
   display: flex;
   flex: 1 100px;
 }
 
-.main-astronaut > img{
+.main-astronaut > img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.main-text{
+.main-text {
   height: auto;
   display: flex;
-  flex: 1 100px;
+  flex: 4 100px;
   flex-wrap: nowrap;
 }
 
-#textDinamic{
-  color:white;
-  font-size: 1.5rem;
-  white-space: nowrap;
+#textDinamic {
+  color: white;
+  font-size: 1.8rem;
 }
 
-#textDinamic::after{
-  content: '|';
+#textDinamic::after {
+  content: "|";
   margin-right: 5px;
   opacity: 1;
-  animation: pisque .7s infinite;
+  animation: pisque 0.7s infinite;
 }
 
-@keyframes pisque{
-  0%, 100% {
+@keyframes pisque {
+  0%,
+  100% {
     opacity: 1;
   }
-  50%{
+  50% {
     opacity: 0;
   }
 }
@@ -224,13 +217,13 @@ a:after{
   position: relative;
 }
 
-.planet-list{
+.planet-list {
   display: flex;
   max-width: 990px;
   height: 100%;
   flex-direction: row;
   justify-content: center;
-  overflow-x: auto;  
+  overflow-x: auto;
   gap: 40px;
   scroll-behavior: smooth;
 }
@@ -240,21 +233,21 @@ a:after{
 }
 
 .planet-list::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+  box-shadow: inset 0 0 5px rgb(0, 0, 0);
   border-radius: 10px;
 }
 
 .planet-list::-webkit-scrollbar-thumb {
-  background: rgb(32, 32, 32); 
+  background: rgb(32, 32, 32);
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0);
 }
 
 .planet-list::-webkit-scrollbar-thumb:hover {
-  background: #8e8d8d; 
+  background: #8e8d8d;
 }
 
-.planet-cards{
+.planet-cards {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -264,39 +257,49 @@ a:after{
   padding: 0.6rem;
   margin-top: 80px;
   position: relative;
-  left: 750px 
+  left: 750px;
 }
 
-.btn-before,.btn-after{
+.btn-before,
+.btn-after {
   padding: 0.5rem;
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   z-index: 1;
   font-size: 1rem;
   opacity: 0.5;
-  border:none;
+  border: none;
   border-radius: 18px;
   height: 500px;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
-.btn-before-icon,.btn-after-icon{
+.btn-before-icon,
+.btn-after-icon {
   width: 80px;
   height: 80px;
 }
 
-.btn-before{
-  position:absolute;
+.btn-before {
+  position: absolute;
   left: 29px;
   z-index: 1;
-  background: linear-gradient( to left, rgba(0, 0, 0, 0.217), rgb(0 0 0 / 85%), rgba(190, 190, 190, 0.217) );
-
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.217),
+    rgb(0 0 0 / 85%),
+    rgba(190, 190, 190, 0.217)
+  );
 }
-.btn-after{
-  position:absolute;
+.btn-after {
+  position: absolute;
   right: 29px;
-  background: linear-gradient( to left, rgba(190, 190, 190, 0.217), rgb(0 0 0 / 85%), rgba(0, 0, 0, 0.68) );
-
+  background: linear-gradient(
+    to left,
+    rgba(190, 190, 190, 0.217),
+    rgb(0 0 0 / 85%),
+    rgba(0, 0, 0, 0.68)
+  );
 }
 
 .planet-img {
@@ -306,11 +309,11 @@ a:after{
   position: relative;
   top: -70px;
   left: 60px;
-  -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(0,0,0,0.2));
+  -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(0, 0, 0, 0.2));
   padding-bottom: 0.3rem;
 }
 
-.planet-content{
+.planet-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,19 +323,18 @@ a:after{
   padding: 0.8rem;
 }
 
-.planet-name{
+.planet-name {
   font-weight: bold;
   font-size: 1.6rem;
   text-align: center;
-  color:rgb(255, 255, 255);
-
+  color: rgb(255, 255, 255);
 }
 
-.planet-description{
+.planet-description {
   color: rgb(255, 255, 255);
   display: -webkit-box;
   -webkit-line-clamp: 7;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -345,19 +347,21 @@ a:after{
   background-color: #000;
 }
 
-.stl-container{
+.stl-container {
   width: 100%;
   height: auto;
-  border: 1px solid white;
   padding: 1rem;
   flex-wrap: wrap;
+
+
 }
 
-.satellite-description{
+
+.satellite-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 3 100px;  
+  flex: 3 100px;
   height: 100%;
 }
 
@@ -367,59 +371,64 @@ a:after{
   font-size: 1.3rem;
 }
 
-/* .satellite-description{
-  flex: 1;
-} */
-
-.satellite-description > p
-{
+.satellite-description > p {
   text-align: justify;
   font-size: 1rem;
   color: antiquewhite;
 }
 
-.satellite-img{
+.satellite-img {
   flex: 1 100px;
-height: 100%;
-perspective: 100px;
-padding-left: 1rem;
+  height: 100%;
+  perspective: 100px;
+  padding-left: 1rem;
 }
 
-
-.satellite-img img{
+.satellite-img img {
   max-width: 100%;
   height: 100%;
   object-fit: contain;
-
+  animation: moveSatelite 2s linear 5s infinite alternate;
+  position: absolute;
 }
+
+@keyframes moveSatelite {
+  from {
+      top: 0px;
+  }
+  to {
+      top: 40px;
+  }
+}
+
+
 .astros-section {
   display: flex;
   justify-content: center;
   background: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0),
-    rgba(0, 0, 0, 0.626),
-    rgba(0, 0, 0, 0)
-  ),url("/assests/img/astros-night.jpg") no-repeat;
-  background-position: right bottom;  
+      to bottom,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.626),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assests/img/astros-night.jpg") no-repeat;
+  background-position: right bottom;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
 
-
-.astros-img{
+.astros-img {
   width: 50%;
   height: 100%;
 }
-.astros-img img{
+.astros-img img {
   max-width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-
-.astros-description{
+.astros-description {
   width: 100%;
   height: 400px;
   display: flex;
@@ -431,7 +440,7 @@ padding-left: 1rem;
 .astros-head {
   width: 100%;
   height: 50%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -443,24 +452,22 @@ padding-left: 1rem;
 
 .astros-head p {
   color: white;
-
 }
 
-.astros-body{
+.astros-body {
   width: 100%;
   height: 70%;
   color: white;
 }
 
 .footer-section {
-  height: 200px;
+  height: 300px;
   width: 100%;
   background-color: rgb(32, 31, 31);
-  color:white;
+  color: white;
 }
 
-
-.rodape{
+.rodape {
   height: 100%;
   width: 100%;
   display: flex;
@@ -468,33 +475,33 @@ padding-left: 1rem;
   justify-content: space-around;
 }
 
-
-.rodape-list{
+.rodape-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.rodape-direitos{
+.rodape-direitos {
   text-align: center;
 }
 
 .rodape-media > ul {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: start;
+  margin-right: 0px;
 }
 
-.rodape-media  ul li{
+.rodape-media ul li {
   list-style-type: none;
   padding-left: 1rem;
 }
 
-.rodape-info  ul li{
+.rodape-info ul li {
   list-style-type: none;
 }
 
-.icon-media{
+.icon-media {
   font-size: 2rem;
 }
