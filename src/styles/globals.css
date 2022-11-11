@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Gemunu Libre", sans-serif;
+  scroll-behavior:smooth;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 }
 
 .satelites-section,
-.astros-section,
+.asteroides-section,
 .planets-section {
   display: flex;
   flex-direction: column;
@@ -31,7 +32,7 @@ a {
   height: 100vh;
 }
 
-.astros,
+.asteroides,
 .main,
 .satellite {
   height: 100%;
@@ -222,10 +223,11 @@ a:hover:after {
   max-width: 990px;
   height: 100%;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   overflow-x: auto;
   gap: 40px;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .planet-list::-webkit-scrollbar {
@@ -256,8 +258,6 @@ a:hover:after {
   /* border: 1px solid rgba(255, 255, 255, 0.628); */
   padding: 0.6rem;
   margin-top: 80px;
-  position: relative;
-  left: 750px;
 }
 
 .btn-before,
@@ -336,6 +336,7 @@ a:hover:after {
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin: 0.5rem 0
 }
 
 .satelites-section {
@@ -402,7 +403,7 @@ a:hover:after {
 }
 
 
-.astros-section {
+.asteroides-section {
   display: flex;
   justify-content: center;
   background: linear-gradient(
@@ -418,17 +419,17 @@ a:hover:after {
   width: 100%;
 }
 
-.astros-img {
+.asteroides-img {
   width: 50%;
   height: 100%;
 }
-.astros-img img {
+.asteroides-img img {
   max-width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.astros-description {
+.asteroides-description {
   width: 100%;
   height: 400px;
   display: flex;
@@ -437,7 +438,7 @@ a:hover:after {
   gap: 10px;
 }
 
-.astros-head {
+.asteroides-head {
   width: 100%;
   height: 50%;
   display: flex;
@@ -445,16 +446,16 @@ a:hover:after {
   justify-content: flex-end;
 }
 
-.astros-head h1 {
+.asteroides-head h1 {
   color: white;
   margin: 0;
 }
 
-.astros-head p {
+.asteroides-head p {
   color: white;
 }
 
-.astros-body {
+.asteroides-body {
   width: 100%;
   height: 70%;
   color: white;
@@ -478,7 +479,6 @@ a:hover:after {
 .rodape-list {
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .rodape-direitos {
@@ -491,6 +491,8 @@ a:hover:after {
   height: 100%;
   justify-content: start;
   margin-right: 0px;
+  margin-block-end: 0;
+  padding: 0.5rem;
 }
 
 .rodape-media ul li {

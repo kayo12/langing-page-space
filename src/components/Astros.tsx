@@ -1,26 +1,30 @@
-export default function Astros() {
+export default function asteroides() {
   return (
-    <section className="astros-section">
-      <span className="title-section">Astros</span>
-      <div className="astros">
-        <div className="astros-img">
-          <img src="/assests/img/cometa.png" alt="cometa" width="100%"/>
+    <section id="id_asteroides" className="asteroides-section">
+      <span className="title-section">asteroides</span>
+      <div className="asteroides">
+        <div className="asteroides-img">
+          <img src="/assests/img/cometa.png" alt="cometa" width="100%" />
         </div>
-        <div className="astros-description">
-          <div className="astros-head">
-            <h1>Cometa</h1>
-            <p>subtitulo</p>
+        <div className="asteroides-description">
+          <div className="asteroides-head">
+            <h1>O que são ?</h1>
+            <p>Imagem ilustrativa</p>
           </div>
-          <div className="astros-body">
+          <div className="asteroides-body">
             <p>
-              Aliquam condimentum ligula ut dolor rhoncus, eget ullamcorper sem
-              feugiat. Praesent ante dolor, pharetra at ex ac, viverra
-              pellentesque velit. Etiam tincidunt sed dui vitae hendrerit. In
-              luctus ante dictum lorem sollicitudin, sed maximus orci congue.
-              Etiam ultrices augue ut nisl efficitur, sed molestie ligula
-              sodales. Duis vestibulum sollicitudin fermentum. Donec ac lectus
-              nec nisi cursus vestibulum quis ac mauris.
-              dsaddsdsd
+              Asteróides são objectos rochosos e metálicos que orbitam o Sol mas
+              são pequenos demais para serem considerados planetas. São
+              conhecidos por planetas menores. A dimensão dos asteróides varia
+              desde Ceres, que tem um diâmetro de cerca de 1000 km, até à
+              dimensão de pequenas pedras. Dezasseis asteróides têm um diâmetro
+              de 240 km ou mais. Foram descobertos desde o interior da órbita da
+              Terra até para lá da órbita de Saturno. Muitos, porém, estão
+              dentro de uma cintura que existe entre as órbitas de Marte e de
+              Júpiter. Alguns têm órbitas que atravessam a órbita da Terra e
+              alguns atingiram até a Terra em tempos passados. Um dos exemplos
+              mais bem conservados é a Cratera de Meteoro Barringer perto de
+              Winslow, Arizona, EUA.
             </p>
           </div>
         </div>
