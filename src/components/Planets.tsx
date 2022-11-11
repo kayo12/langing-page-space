@@ -4,18 +4,38 @@ import Image from "next/image";
 import earth from "../assests/img/mars.jpg";
 
 export default function Planetas(props) {
+
   function scrollMove(event) {
-    let eve = event.target.id;
-    console.log(eve);
-    let planetlist = document.querySelectorAll(".planet-list")[0];
+    let eve = event.target.id
+    let count = 0;
+    let planetlist = document.querySelectorAll(".planet-cards");
+    let maxPlanetList = planetlist.length
 
-    if(eve == "next") {
-      planetlist.scrollTo(planetlist.scrollLeft + 300, 0);
+
+    if (count >= maxPlanetList) {
+      count = 0;
     }
 
+    if (count < 0) {
+      count = maxPlanetList - 1;
+    }
+
+      console.log("Entrou na função")
+    if(eve == "next" ){
+      console.log("Entrou no next")
+      count += 1;
+   
+  }
     if(eve == "after") {
-      planetlist.scrollTo(planetlist.scrollLeft - 300, 0);
-    }
+      console.log("Entrou no after")
+      count -= 1;
+  }
+
+  planetlist[count].scrollIntoView({
+    block: 'center',
+    behavior: 'smooth'
+  })
+ 
   }
 
   return (
@@ -71,13 +91,13 @@ export default function Planetas(props) {
               <p className="planet-description">Massa (KG): 5.9736 x 1024</p>
             </div>
           </div>
-          <div className="planet-cards">
+          <div id="teste" className="planet-cards">
             <img
               src="/assests/img/plutao.png"
               alt="Earth"
               className="planet-img"
             />
-            <div className="planet-content">
+            <div  className="planet-content">
               <span className="planet-name">Plutão</span>
               <p className="planet-description">
                 O planeta-anão Plutão era considerado um planeta até o ano de
