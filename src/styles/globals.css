@@ -40,7 +40,7 @@ a {
   max-width: 990px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .planet {
@@ -420,7 +420,7 @@ a:hover:after {
 }
 
 .asteroides-img {
-  width: 50%;
+  flex: 1 1 80px;
   height: 100%;
 }
 .asteroides-img img {
@@ -430,12 +430,12 @@ a:hover:after {
 }
 
 .asteroides-description {
-  width: 100%;
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  flex: 1 1 80px;
 }
 
 .asteroides-head {
