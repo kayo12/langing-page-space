@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Gemunu Libre", sans-serif;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -336,7 +336,7 @@ a:hover:after {
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  margin: 0.5rem 0
+  margin: 0.5rem 0;
 }
 
 .satelites-section {
@@ -353,10 +353,7 @@ a:hover:after {
   height: auto;
   padding: 1rem;
   flex-wrap: wrap;
-
-
 }
-
 
 .satellite-description {
   display: flex;
@@ -395,13 +392,12 @@ a:hover:after {
 
 @keyframes moveSatelite {
   from {
-      top: 0px;
+    top: 0px;
   }
   to {
-      top: 40px;
+    top: 40px;
   }
 }
-
 
 .asteroides-section {
   display: flex;
@@ -412,7 +408,7 @@ a:hover:after {
       rgba(0, 0, 0, 0.626),
       rgba(0, 0, 0, 0)
     ),
-    url("/assests/img/astros-night.jpg") no-repeat;
+    url("/assests/img/astros-night.webp") no-repeat;
   background-position: right bottom;
   background-size: cover;
   height: 100vh;
@@ -420,7 +416,7 @@ a:hover:after {
 }
 
 .asteroides-img {
-  flex: 1 1 80px;
+  flex: 1 80px;
   height: 100%;
 }
 .asteroides-img img {
@@ -435,7 +431,7 @@ a:hover:after {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  flex: 1 1 80px;
+  flex: 3 80px;
 }
 
 .asteroides-head {
@@ -506,4 +502,15 @@ a:hover:after {
 
 .icon-media {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .asteroides,
+  .main{
+
+    flex-direction: column-reverse;
+
+  }
+
+  
 }
