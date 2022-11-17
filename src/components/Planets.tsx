@@ -11,7 +11,6 @@ export default function Planetas(props) {
     let planetlist = document.querySelectorAll(".planet-cards");
     let maxPlanetList = planetlist.length
 
-
     if (count >= maxPlanetList) {
       count = 0;
     }

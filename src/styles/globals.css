@@ -413,6 +413,8 @@ a:hover:after {
   background-size: cover;
   height: 100vh;
   width: 100%;
+  padding: 1rem;
+
 }
 
 .asteroides-img {
@@ -510,6 +512,10 @@ a:hover:after {
 
     flex-direction: column-reverse;
 
+  }
+  .asteroides-description,.asteroides-img{
+
+    height: 50%;
   }
 
   
