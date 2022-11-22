@@ -2,56 +2,61 @@ import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 
 import Image from "next/image";
 import earth from "../assests/img/mars.jpg";
+import { useState } from "react";
 
 export default function Planetas(props) {
+  function scrollMove(e) {
+    const [count, useCount ] = useState(0)
 
-  function scrollMove(event) {
-    let eve = event.target.id
-    let count = 0;
-    let planetlist = document.querySelectorAll(".planet-cards");
+   
+    let eve = e.target.value;
+    let planetlist = document.getElementById("id_planetas");
     let maxPlanetList = planetlist.length
 
-    if (count >= maxPlanetList) {
-      count = 0;
+    console.log("Entrou na função");
+    if(count < 0){
+      count = maxPlanetList
     }
 
-    if (count < 0) {
-      count = maxPlanetList - 1;
+    if (eve == "next") {
+      console.log("Entrou no next");
+      count = count + 1;
+      console.log(`count next: ${count}`)
+    }
+    if (eve == "after") {
+      console.log(`Entrou no after ${count}`);
+      count = count - 1; 
+      console.log(`count after: ${count}`)
     }
 
-      console.log("Entrou na função")
-    if(eve == "next" ){
-      console.log("Entrou no next")
-      count += 1;
-   
-  }
-    if(eve == "after") {
-      console.log("Entrou no after")
-      count -= 1;
-  }
+    console.log(count)
 
-  planetlist[count].scrollIntoView({
-    block: 'center',
-    behavior: 'smooth'
-  })
- 
+    planetlist.children[count]?.scrollIntoView({
+      inline: "center",
+      block: "center",
+      behavior: "smooth",
+    });
   }
 
   return (
-    <section id="id_planetas" className="planets-section">
+    <section className="planets-section">
       <span className="title-section">Planetas</span>
       <div className="planet">
         <button
-          id="after"
+          value="after"
           onClick={(e) => scrollMove(e)}
           className="btn-before"
         >
           <BsChevronCompactLeft className="btn-before-icon" />
         </button>
-        <button id="next" onClick={(e) => scrollMove(e)} className="btn-after">
+        <button
+          value="next"
+          onClick={(e) => scrollMove(e)}
+          className="btn-after"
+        >
           <BsChevronCompactRight className="btn-after-icon" />
         </button>
-        <div className="planet-list">
+        <div  id="id_planetas"className="planet-list">
           <div className="planet-cards">
             <img
               src="/assests/img/mars.png"
@@ -96,7 +101,7 @@ export default function Planetas(props) {
               alt="Earth"
               className="planet-img"
             />
-            <div  className="planet-content">
+            <div className="planet-content">
               <span className="planet-name">Plutão</span>
               <p className="planet-description">
                 O planeta-anão Plutão era considerado um planeta até o ano de
