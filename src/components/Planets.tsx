@@ -2,40 +2,38 @@ import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 
 import Image from "next/image";
 import earth from "../assests/img/mars.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Planetas(props) {
+
+
   function scrollMove(e) {
-    const [count, useCount ] = useState(0)
 
-   
-    let eve = e.target.value;
-    let planetlist = document.getElementById("id_planetas");
-    let maxPlanetList = planetlist.length
 
-    console.log("Entrou na função");
-    if(count < 0){
-      count = maxPlanetList
+    let carouselScroll = document.querySelector("#id_planetas"); 
+    let widthCard  = document.querySelectorAll(".planet-cards")[0].clientWidth + 98;
+    let showBf = document.querySelectorAll(".btn-before")[0] as HTMLElement ;
+    let showAf = document.querySelectorAll(".btn-after")[0] as HTMLElement;
+    let maxWidth = carouselScroll.scrollWidth - carouselScroll.clientWidth
+
+    const ShowHidden = () =>{
+      showBf.style.display = carouselScroll.scrollLeft == 0 ? "none" : "block";
+      showBf.style.display = carouselScroll.scrollLeft == carouselScroll.scrollWidth ? "none" : "block";
     }
 
-    if (eve == "next") {
-      console.log("Entrou no next");
-      count = count + 1;
-      console.log(`count next: ${count}`)
-    }
-    if (eve == "after") {
-      console.log(`Entrou no after ${count}`);
-      count = count - 1; 
-      console.log(`count after: ${count}`)
+
+    if(e.target.value == "next"){
+
+          carouselScroll.scrollLeft  += widthCard;
+          ShowHidden()
     }
 
-    console.log(count)
+    if(e.target.value == "after"){
 
-    planetlist.children[count]?.scrollIntoView({
-      inline: "center",
-      block: "center",
-      behavior: "smooth",
-    });
+      carouselScroll.scrollLeft  -= widthCard;
+      ShowHidden()
+  }
+
   }
 
   return (
@@ -47,14 +45,14 @@ export default function Planetas(props) {
           onClick={(e) => scrollMove(e)}
           className="btn-before"
         >
-          <BsChevronCompactLeft className="btn-before-icon" />
+          <BsChevronCompactLeft onClick={(e) => scrollMove(e)} className="btn-before-icon" />
         </button>
         <button
           value="next"
           onClick={(e) => scrollMove(e)}
           className="btn-after"
         >
-          <BsChevronCompactRight className="btn-after-icon" />
+          <BsChevronCompactRight onClick={(e) => scrollMove(e)} className="btn-after-icon" />
         </button>
         <div  id="id_planetas"className="planet-list">
           <div className="planet-cards">

@@ -224,8 +224,8 @@ a:hover:after {
   height: 100%;
   flex-direction: row;
   justify-content: flex-start;
-  overflow-x: auto;
-  gap: 40px;
+  overflow-x: hidden;
+  gap: 20px;
   scroll-behavior: smooth;
   position: relative;
 }
@@ -262,6 +262,7 @@ a:hover:after {
 
 .btn-before,
 .btn-after {
+ 
   padding: 0.5rem;
   background-color: rgb(255, 255, 255);
   z-index: 1;
@@ -281,6 +282,7 @@ a:hover:after {
 }
 
 .btn-before {
+  display: none;
   position: absolute;
   left: 29px;
   z-index: 1;
