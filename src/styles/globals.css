@@ -55,8 +55,8 @@ a {
   color: blanchedalmond;
   font-size: 3rem;
   font-weight: bolder;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+ padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .nav-menu {
@@ -270,6 +270,9 @@ a:hover:after {
   padding: 0.6rem;
   margin-top: 80px;
 }
+
+
+
 
 .btn-before,
 .btn-after {

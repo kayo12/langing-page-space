@@ -16,8 +16,8 @@ export default function Planetas(props) {
 
     const ShowHidden = () => {
       showBf.style.display = carouselScroll.scrollLeft == 0 ? "none" : "block";
-      showBf.style.display =
-        carouselScroll.scrollLeft == carouselScroll.scrollWidth
+      showAf.style.display =
+        Math.ceil(carouselScroll.scrollLeft) == maxWidth
           ? "none"
           : "block";
     };
