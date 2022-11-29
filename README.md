@@ -37,6 +37,6 @@ yarn dev
 Por ultimo, abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
 
 
-![image](https://user-images.githubusercontent.com/35537031/204111182-60277fc8-beff-428c-918c-427e4744a38e.png)
+![image](https://user-images.githubusercontent.com/35537031/204435942-52f1eb30-922a-412b-8211-13b4d09a2951.png)
 
 
