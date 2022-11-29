@@ -1,4 +1,4 @@
-import { IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
+import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
 
 export default function Footer(props) {
   let date = new Date().getFullYear();
@@ -39,10 +39,14 @@ export default function Footer(props) {
           <div className="rodape-media">
             <ul>
               <li>
+                <a href="https://www.linkedin.com/in/kayohcampos/" target="_blank">
                 <IoLogoLinkedin className="icon-media" />
+                </a>
               </li>
               <li>
-                <IoLogoInstagram className="icon-media" />
+                <a href="https://github.com/kayo12/langing-page-space" target="_blank">
+                <IoLogoGithub className="icon-media" />
+                </a>
               </li>
             </ul>
           </div>

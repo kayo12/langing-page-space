@@ -1,7 +1,7 @@
 export default function asteroides() {
   return (
     <section id="id_asteroides" className="asteroides-section">
-      <span className="title-section">asteroides</span>
+      <span className="title-section">Asteroides</span>
       <div className="asteroides">
         <div className="asteroides-img">
           <img src="/assests/img/cometa.png" alt="cometa" width="100%" />

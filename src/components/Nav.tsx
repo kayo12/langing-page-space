@@ -7,7 +7,7 @@ export default function Nav(props) {
   return (
     <header className="nav-menu">
       <div className="logo">
-        <GiExplodingPlanet id="logo_nav"/>
+       <span> Astros</span> <GiExplodingPlanet id="logo_nav"/>
       </div>
       <nav className="nav-bar"> 
         <ul className="nav-list">

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Main from '../components/Main'
 import Planets  from '../components/Planets'
 import Satelites from '../components/Satelites'
-import Astros from '../components/Astros'
+import Asteroides from '../components/Asteroides'
 import Footer from '../components/Footer'
 
 
@@ -21,7 +21,7 @@ export default function Home() {
         <Main/>
         <Planets/>
         <Satelites/>
-        <Astros/>
+        <Asteroides/>
         <Footer/>
     </div>
   )
