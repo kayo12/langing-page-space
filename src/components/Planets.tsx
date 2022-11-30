@@ -7,9 +7,10 @@ import { useEffect, useState } from "react";
 export default function Planetas(props) {
   function scrollMove(e) {
     let carouselScroll = document.querySelector("#id_planetas");
-    let widthCard = document.querySelectorAll(".planet-cards")[0].clientWidth > 300 
-    ? document.querySelectorAll(".planet-cards")[0].clientWidth + 79 :
-    document.querySelectorAll(".planet-cards")[0].clientWidth
+    let widthCard =
+      document.querySelectorAll(".planet-cards")[0].clientWidth > 300
+        ? document.querySelectorAll(".planet-cards")[0].clientWidth + 79
+        : document.querySelectorAll(".planet-cards")[0].clientWidth;
     let showBf = document.querySelectorAll(".btn-before")[0] as HTMLElement;
     let showAf = document.querySelectorAll(".btn-after")[0] as HTMLElement;
     let maxWidth = carouselScroll.scrollWidth - carouselScroll.clientWidth;
@@ -17,9 +18,7 @@ export default function Planetas(props) {
     const ShowHidden = () => {
       showBf.style.display = carouselScroll.scrollLeft == 0 ? "none" : "block";
       showAf.style.display =
-        Math.ceil(carouselScroll.scrollLeft) == maxWidth
-          ? "none"
-          : "block";
+        Math.ceil(carouselScroll.scrollLeft) == maxWidth ? "none" : "block";
     };
 
     if (e.target.value == "next") {
@@ -35,7 +34,7 @@ export default function Planetas(props) {
 
   return (
     <section className="planets-section">
-      <span className="title-section">Planetas</span>
+      <span className="title-section">Sistema solar</span>
       <div className="planet">
         <button
           value="after"
@@ -43,7 +42,7 @@ export default function Planetas(props) {
           className="btn-before"
         >
           <BsChevronCompactLeft
-            onClick={(e) => scrollMove(e)}
+            
             className="btn-before-icon"
           />
         </button>
@@ -53,11 +52,31 @@ export default function Planetas(props) {
           className="btn-after"
         >
           <BsChevronCompactRight
-            onClick={(e) => scrollMove(e)}
+            
             className="btn-after-icon"
           />
         </button>
         <div id="id_planetas" className="planet-list">
+          <div className="planet-cards">
+            <img
+              src="/assests/img/sol.png"
+              alt="Earth"
+              className="planet-img"
+            />
+            <div className="planet-content">
+              <span className="planet-name">Sol</span>
+              <p className="planet-description">
+                O Sol é uma estrela que tem 1 392 700 Km, ou seja, é 109 mil
+                vezes maior do que a Terra. A Terra tem 12 742 km, o que quer
+                dizer que dentro do Sol seria possível colocar 1,3 milhões de
+                planetas Terra. Mas, apesar de ser muito maior do que a Terra,
+                em comparação com outras estrelas, esse astro não é assim tão
+                grande. A maior estrela conhecida, a VY Canis Majoris, é cerca
+                de 2 mil vezes maior do que o Sol.
+              </p>
+              <p className="planet-description">Massa (KG): 1,989 x 1030</p>
+            </div>
+          </div>
           <div className="planet-cards">
             <img
               src="/assests/img/mars.png"

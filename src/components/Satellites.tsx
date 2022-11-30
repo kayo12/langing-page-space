@@ -1,4 +1,4 @@
-export default function Satelites(props) {
+export default function Satellites(props) {
   return (
     <section id="id_satelites" className="satelites-section">
       <span className="title-section">Satelites</span>

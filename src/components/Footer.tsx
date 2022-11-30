@@ -44,7 +44,7 @@ export default function Footer(props) {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/kayo12/langing-page-space" target="_blank">
+                <a href="https://github.com/kayo12" target="_blank">
                 <IoLogoGithub className="icon-media" />
                 </a>
               </li>
