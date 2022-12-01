@@ -41,7 +41,7 @@ a {
   max-width: 990px;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .planet {
@@ -69,7 +69,7 @@ a {
   );
 
   width: 100%;
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -95,13 +95,6 @@ a {
   flex-wrap: wrap;
 }
 
-.active {
-  display: flex;
-}
-
-.hidden{
-  display: none;
-}
 
 .nav-list {
   position: relative;
@@ -464,7 +457,7 @@ a:hover:after {
     url("/assests/img/astros-night.jpg") no-repeat;
   background-position: right bottom;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 1rem;
 
@@ -474,7 +467,7 @@ a:hover:after {
   flex: 1 80px;
   height: 100%;
 }
-.asteroides-img img {
+.asteroides-img > img {
   max-width: 100%;
   height: 100%;
   object-fit: contain;
@@ -568,9 +561,21 @@ a:hover:after {
   font-size: 2rem;
 }
 
+
+.active{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.close{
+  display: none;
+  text-align-last: end;
+}
+
 @media screen and (max-width: 500px) {
-
-
 
 
 .title-section{
@@ -583,11 +588,7 @@ a:hover:after {
     align-items: center;
 
   }
-  .asteroides-description,.asteroides-img{
 
-    height: 50%;
-  }
-  
   .planet-list{
     width: 300px;
     gap: 0;
@@ -597,16 +598,25 @@ a:hover:after {
     flex-direction: column;
   }
 
-  .nav-list:nth-child(1){
-    display: block;
+  .nav-list > li:nth-child(1){
+    display: flex;
+    justify-content: end;
   }
-
-  .nav-list:nth-child(2){
-    display: none;
-  }
-
   .nav-list:hover{
     cursor: pointer;
+  }
+
+  .active{
+    display: none;
+  }
+  
+  .hidden{
+    display: flex;
+  }
+  
+  .close{
+    display: flex;
+    font-size: 1rem;
   }
 
 }

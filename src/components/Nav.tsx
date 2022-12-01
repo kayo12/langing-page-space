@@ -1,36 +1,29 @@
 
+import { useState } from 'react';
 import { GiExplodingPlanet } from 'react-icons/gi';
+import {CgClose} from 'react-icons/cg'
 import {TfiViewList} from 'react-icons/tfi'
 
 
 
 export default function Nav(props) {
 
-  function moveSideBar(){
-      const hideShow = document.querySelectorAll(".nav-list").forEach((e) => {
+ const [showMenu, setShowMenu] = useState(false) 
 
-
-          if(e.classList.contains("hiden")){
-            e.classList.remove("hiden")
-            e.classList.add("active")
-          }
-         
-      })
-
-      return hideShow;
-    }
-
+  const moveSideBar = () => setShowMenu(!showMenu)
 
   return (
     <header className="nav-menu">
       <div className="logo">
        <span> Astros</span> <GiExplodingPlanet id="logo_nav"/>
       </div>
-      <nav className="nav-bar"> 
-        <ul className="nav-list hidden">
-          <li onClick={moveSideBar}><TfiViewList/></li>
+      <nav className="nav-bar">  
+        <ul className={showMenu ? 'nav-list active' : 'nav-list hidden'}>
+          <li ><TfiViewList onClick={moveSideBar}/></li>
         </ul>
-        <ul className="nav-list active">
+        
+        <ul className={showMenu ? 'nav-list hidden' : 'nav-list active'}>
+           <li><CgClose onClick={moveSideBar} className='close'/></li>
           <li><a href="#id_planetas">Planetas</a></li>
           <li><a href="#id_satelites">Setéletites</a></li>
           <li><a href="#id_asteroides">Asteroides</a></li>
